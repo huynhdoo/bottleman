@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>La bouteille qui dit merci !</title>
+    <title>Bottleman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="css/bouteille.css" rel="stylesheet">
     <style type="text/css">
       body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
@@ -23,7 +24,7 @@
     <![endif]-->
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="shortcut icon" href="ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
@@ -31,7 +32,6 @@
   </head>
 
   <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -40,31 +40,36 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html">La bouteille qui dit merci !</a>
+          <a class="brand" href="index.html">Bottleman</a>
           <div class="nav-collapse collapse">
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Utilisateur">
-              <input class="span2" type="password" placeholder="Mot de passe">
-              <button type="submit" class="btn">Connexion</button>
-            </form>
+            <ul class="nav" id="main-menu">
+              <li><a href="invitation.html">Invitation</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="histoire.html">Histoire</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Connexion.html">Connexion</a></li>
+            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
     <div class="container">
-      <h1>
-          Inscrivez-vous sans engagement et restez inform&eacute de la prochaine commande.
-      </h1>
-      <form>
+      <h2>
+          Bient&ocirc;t. Chez vous. Pour vous.
+      </h2>
+      <hr>
+      <h4>
+          Bottleman est en pleine pr&eacute;paration. Inscrivez-vous sans engagement et restez inform&eacute; de l'ouverture des commandes. Aucune de vos informations ne sera diffus&eacute;e.
+      </h4>
+      <form class="navbar-form">
         <div class="row">
           <div class=span3></div>
-          <div class=span6><input type="text" placeholder="Nom"></div>
+          <div class=span6><input type="text" placeholder="Pr&eacute;nom"></div>
           <div class=span3></div>
         </div>
         <div class="row">
           <div class=span3></div>
-          <div class=span6><input type="text" placeholder="Pr&eacute;nom"></div>
+          <div class=span6><input type="text" placeholder="Nom"></div>
           <div class=span3></div>
         </div>
          <div class="row">
@@ -87,34 +92,23 @@
           <div class=span6><input type="text" placeholder="Email"></div>
           <div class=span3></div>
         </div>
+        <br>
         <div class="row">
           <div class=span3></div>
-          <div class=span6><input type="text" placeholder="T&eacute;l&eacute;phone mobile"></div>
+          <div class=span6>
+            <textarea placeholder="Ce que j'aime boire"></textarea>
+          </div>
           <div class=span3></div>
         </div>
+        <br>
         <div class="row">
           <div class=span3></div>
-          <div class=span6><input type="text" placeholder="T&eacute;l&eacute;phone domicile"></div>
-          <div class=span3></div>
-        </div>
-        <div class="row">
-          <div class=span3></div>
-          <div class=span6><input type="text" placeholder="Utilisateur"></div>
-          <div class=span3></div>
-        </div>
-        <div class="row">
-          <div class=span3></div>
-          <div class=span6><input type="text" placeholder="Mot de passe"></div>
-          <div class=span3></div>
-        </div>
-        <div class="row">
-          <div class=span3></div>
-          <div class=span6><button type="submit" class="btn">Valider l'inscription</button></div>
+          <div class=span6><button type="submit" class="btn btn-primary btn-large">Demander mon invitation</button></div>
           <div class=span3></div>
         </div>
       </form>     
       <hr>
-      <footer>
+     <footer>
         <div class="row">
           <div class="span4">
             <a class="link" href="#contact">Contact</a><br>
@@ -130,6 +124,7 @@
           </div>
         </div>
       </footer>
+
     </div> <!-- /container -->
 
     <!-- Le javascript
@@ -148,6 +143,5 @@
     <script src="js/bootstrap-collapse.js"></script>
     <script src="js/bootstrap-carousel.js"></script>
     <script src="js/bootstrap-typeahead.js"></script>
-
   </body>
 </html>
