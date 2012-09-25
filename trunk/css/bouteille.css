@@ -1,9 +1,10 @@
+/*
 @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
   src: local('Ubuntu'), url(ubuntu.woff) format('woff');
-}
+}*/
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 /*!
  * Bootstrap v2.1.1
@@ -149,7 +150,7 @@ textarea {
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0px 0px 5px 0px;
   font-family: 'Ubuntu', Tahoma, sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -3520,8 +3521,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 10px 20px 10px;
-  margin-left: -20px;
+  padding: 10px;
+  margin-left: -5px;
   font-size: 20px;
   font-weight: 200;
   color: #ffffff;
@@ -3623,11 +3624,11 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
+  /*position: fixed;*/
   right: 0;
   left: 0;
   z-index: 1030;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
@@ -3647,7 +3648,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: auto;
 }
 .navbar-fixed-top {
   top: 0;
@@ -4888,19 +4889,19 @@ a.badge:hover {
   position: fixed;
 }
 .navbar .nav > li > a {
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 0px solid rgba(0, 0, 0, 0.2);
+  border-left: 0px solid rgba(255, 255, 255, 0.1);
 }
 .navbar .nav > li > a:hover {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 0px solid rgba(0, 0, 0, 0.2);
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover {
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: 0px solid rgba(0, 0, 0, 0.2);
 }
 .navbar .divider-vertical {
   background-color: inherit;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 0px solid rgba(0, 0, 0, 0.2);
 }
 .navbar .navbar-text {
   padding: 9px 10px 11px;
